@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilpe Select</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <style>
+        .mul-select{
+            width: 100%;
+        }
+    </style>
+    
+      
+            
+               
+                    <select class="mul-select" multiple="true">
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Khmer">Khmer</option>
+                        <option value="Thiland">Thiland</option>
+                        <option value="Koren">Koren</option>
+                        <option value="China">China</option>
+                        <option value="English">English</option>
+                        <option >USA</option>
+                    </select>
+            
+    
+        
+   
+     
+    <script>
+        $(document).ready(function(){
+            $(".mul-select").select2({
+                    placeholder: "select country", //placeholder
+                    tags: true,
+                    tokenSeparators: ['/',',',';'," "] 
+                });
+            })
+    </script>
+</body>
+</html>
